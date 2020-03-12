@@ -1,0 +1,193 @@
+<!DOCTYPE>
+<html>
+<title> My interests </title>
+<head>
+
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#Mainpage{
+	top: 25em;
+	left:0em;
+	height:35em;
+	width:97em;
+	Position:relative;
+	padding-top: 2em;
+	padding-left: 3em;
+	font-size: 20px;
+	z-index: 3;
+	}
+#sport{
+	top:8em;
+	left:2em;
+	height:10em;
+	width:80em;
+	border-style:solid;
+	border-color:red;
+	padding:10px;
+	margin:0px;
+	position:absolute;
+	
+	}
+#travel{
+	top:20em;
+	left:2em;
+	height:10em;
+	width:80em;
+	border-style:solid;
+	border-color:blue;
+	
+	position:absolute;
+	}
+	
+p{
+	font-size: 20px;
+	text-align: left;
+	font-family: veranda;
+	}
+h4{
+	font-size: 22px;
+	text-align: left;
+	font-family: veranda;
+	}
+
+
+
+
+
+#banner{
+	Top:0em;
+	left:0em;
+	Height:5em;
+	Width:100em;
+	border: strong thick black;
+	position:absolute;
+	background-color: Maroon;
+	}
+h3{
+	font-size: 27px;
+	text-align: center;
+	font-family: cooper black;
+	}
+	
+#container {
+  overflow: hidden;
+  width: 700px;
+  height: 230px;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top:-15em;
+  padding-right:20em;
+}
+
+#imgs {
+  display: block;
+  padding: 0;
+  width: 200%;
+}
+
+#imgs li {
+  padding-right: 10px;
+  display: inline-block;
+ *display:inline;
+}
+
+#imgs img {
+  width: 160px;
+  height: 120px;
+}
+
+#title {
+  display: block;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background: #ddd;
+}
+</style>
+</head>
+<body>
+<div id="Mainpage">
+	<a href="PersonalDetails.html" style="color:red"> My CV </a> <br> 
+	<a href="Consulting.html" style="color:green"> Consulting </a> <br>
+	<a href="MyCV.html"> My CV</a> <br>
+	<a href="Workexperience.html" style="color:orange">Workexperience</a><br>
+	<a href="Homepage.html" style="color:blue">Homepage</a>
+</div>
+<div id="banner">
+	<h3><u>My Interests<u></h3>
+</div> 
+
+<div id="sport">
+	<h4><b>Sport</b></h4>
+	<p>I love playing Sport.My favourite sports are soccer and hurling. I play soccer for Liverpool FC and hurling with Armagh GAA club<br> 
+		In 2018 I won the Ulster championship with Armagh in hurling. My favourite soccer player is Steven Gerrard.He captained Liverpool <br>
+		for 10 years. I also have great interest in tennis as I find it the most phsyically demanding sport to play. Its really fun and is<br>
+		really good for my fitness.
+	</p>
+</div>
+<div id="travel">
+	<h4><b>Travel</b></h4>
+	<p>I also love to travel by the age of 19 I have been to over 10 different countries including the likes of France, Italy, Germany,<br>
+		and Spain. Ive seen lots of amazing things including the Leaning tower of Piza and Arc de Triomphe. In the next few years I aspire<br>
+		to do interailing so I can see most of the continent.
+</div>
+
+	
+	
+	
+
+<!--<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/slider/Simple-Automatic-Image-Scroller-with-jQuery-ImageScroll.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>-->
+</ul>
+
+
+<div id="container"> <span class="title">jQuery ImageScroll</span>
+  <ul id="imgs">
+    <li><img src="Footy.jpg" alt="" /></li>
+    <li><img src="Tennis.jpg" alt="" /></li>
+    <li><img src="Hurling.jpg" alt="" /></li>
+    <li><img src="Rio.jpg" alt="" /></li>
+    <li><img src="United.jpg" alt="" /></li>
+    <li><img src="Galbally.jpg" alt="" /></li>
+    <
+  </ul>
+  <span class="title"></span> </div>
+<div id="controler"> </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="ImageScroll.js"></script> 
+<script type="text/javascript">
+
+  $('#imgs').imageScroll({
+    orientation:"left",
+    speed:600,
+    interval:1000,
+    hoverPause:true,
+    callback:function(){
+      var ordinal = $(this).find("img").first().attr("src");
+      <!-- console.log(ordinal); -->
+      $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
+    }
+  });
+
+  </script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
